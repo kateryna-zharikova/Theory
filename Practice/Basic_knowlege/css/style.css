@@ -175,14 +175,11 @@
   line-height: 1.5em;
 }
 
-.contact-item {
-  width: 49%;
-}
+.contact-item { width: 49%; }
 
 .contact, .map-container {
   position: relative;
-  vertical-align: middle;
-  width: 49%;
+  vertical-align: top;
   height: 250px;
   font-size: .875em;
   line-height: 1.5em;
@@ -190,7 +187,10 @@
 
 .map-container {
   text-align: right;
+  width: 49%;
 }
+
+.contact-list { width: 49%; vertical-align: top; }
 
 .contact-item { margin-bottom: 20px; }
 
@@ -318,4 +318,42 @@
   .client-image { width: 50%; }
 }
 
+@media screen and (max-width: 650px) {
+  .contact { text-align: center; }
+  
+  .contact-list { width: 100%; }
+  
+  .map-container { 
+    width: 100%; 
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-list { 
+    position: static; 
+    bottom: auto;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .contact, 
+  .map-container {
+    height: auto;
+  }
+  
+  .contact-item {
+    width: 100%; 
+    text-align: center; }
+  
+  .contact-data { width: 30%; }
+}
+
+@media screen and (max-width: 480px) {
+  .services-item .image, .image {
+    width: 80%;
+  }
+  .services-description { width: 90%; }
+  
+  .map { width: 90%; }
+}
 
