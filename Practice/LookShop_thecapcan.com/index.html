@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>LookShop</title>
   </head>
@@ -12,16 +13,16 @@
       <header class="header">
         <div class="account-panel no-primary-panel">
           <div class="inside-wrapper">
-            <a class="important-text panel callback" href="tel:+123456789" href="call us">Custom care: 123 456 789</a>
+            <a class="important-text panel callback" href="tel:+123456789">Custom care: 123 456 789</a>
             <ul class="account-panel-list important-text">
               <li class="account-panel-item inline-block currency no-primary-panel">
-                    $ us
+                    $ us <span class="icon-down-dir"></span>
               </li>
               <li class="account-panel-item inline-block account-name no-primary-panel">
-                My account
+                <span class="icon-user"></span>My account
               </li>
               <li class="account-panel-item inline-block search no-primary-panel">
-                  search
+                  <span class="icon-search"></span>
               </li>
             </ul>
           </div>
@@ -32,9 +33,10 @@
           </a>
           <div class="cart-block">
             <div class="cart panel no-primary-panel cart-select">
-
+              Your cart<span class="icon-down-dir"></span>
             </div>
             <div class="cart panel no-primary-panel">
+              <div class="cart-packet inline-block"></div>
               <ul class="cart-info">
                 <li class="cart-info-item inline-block important-text">
                   0 items
@@ -46,7 +48,19 @@
             </div>
           </div>
           <div class="menu panel primary-color important-text">
-            menu
+            <nav class="menu-nav">
+              <div class="menu-panel">
+                menu<span class="icon-menu"></span>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item inline-block"><a href="#"><span class="icon-down-dir"></span>new</a></li>
+                <li class="menu-item inline-block"><a href="#"><span class="icon-down-dir"></span>designers</a></li>
+                <li class="menu-item inline-block"><a href="#"><span class="icon-down-dir"></span>women</a></li>
+                <li class="menu-item inline-block"><a href="#"><span class="icon-down-dir"></span>men</a></li>
+                <li class="menu-item inline-block"><a href="#"><span class="icon-down-dir"></span>clearence</a></li>
+              </ul>
+            </nav>
+
           </div>
         </div>
         <div class="slider">
@@ -61,8 +75,8 @@
                   <div class="collection-for important-text">
                     Women collection
                   </div>
-                  <button class="primary-color primary-color-button button important-text product-add">
-                    Shop now
+                  <button class="primary-color primary-color-button button important-text">
+                    Shop now <span class="icon-right-dir"></span>
                   </button>
                 </div>
               </div>
@@ -93,31 +107,56 @@
                 Find us here
               </span>
               <ul class="social inline-block">
-                <li class="social-item inline-block panel">
-                  f
-                </li>
-                <li class="social-item inline-block panel">
-                  t
-                </li>
-                <li class="social-item inline-block panel">
-                  l
-                </li>
+                <li class="social-item inline-block panel"><a href="#" class="icon-facebook"></a></li>
+                <li class="social-item inline-block panel"><a href="#" class="icon-twitter"></a></li>
+                <li class="social-item inline-block panel"><a href="#" class="icon-pinterest-circled"></a></li>
               </ul>
             </div>
           </div>
         </section>
         <section class="inside-wrapper banners section">
-          <div class="main-banner"></div>
+          <div class="main-banner">
+            <div class="main-banner-description important-text inline-block">
+              <div class="description-strong">Best</div>
+              <div class="big-description-light">Outfits</div>
+              <div class="decoration-banner">
+                <div class="decoration-amp inline-block">&amp;</div>
+              </div>
+              <div class="big-description-strong">Looks</div>
+            </div>
+          </div>
           <div class="more-banners">
-            <div class="middle-banner"></div>
-            <div class="small-banner-left"></div>
-            <div class="small-banner-right"></div>
+            <div class="middle-banner">
+              <div class="middle-banner-description">
+                <div class="inside-decoration-circle">
+                  <div class="inline-block middle-banner-description-text">
+                    <div class="season">Summer</div>
+                    <div class="middle-banner-big-description important-text">Party</div>
+                    <div class="important-text collection">Collection</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="small-banner-left">
+              <a class="small-banner-link important-text">Best sellers <span class="show">&gt;</span></a>
+            </div>
+            <div class="small-banner-right">
+              <div class="small-banner-description">
+                <div class="small-banner-text inline-block important-text">
+                  Fall<br />leather
+                </div>
+                <button class="button banner-button important-text">
+                  shop now <span class="icon-right-dir"></span>
+                </button>
+              </div>
+            </div>
           </div>
 
         </section>
         <section class="products primary-color section">
           <nav class="products-nav panel">
             <div class="inside-wrapper">
+              <span class="icon-down-dir"></span>
             <ul class="products-categories">
               <li class="product-category important-text active">
                 What's hot?
@@ -136,8 +175,8 @@
             <div class="gallery-pointer-left gallery-pointer panel inline-block "></div>
             </div>
           </nav>
-          <div class="inside-wrapper">
-            <ul class="products-gallery">
+          <div class="inside-wrapper gallery-wrapper">
+            <ul class="products-gallery not-sale">
               <li class="product inline-block">
                 <figure class="product-item">
                   <img class="product-image" src="img/products/1.jpg" alt="product-photo" />
@@ -153,6 +192,12 @@
                     </button>
                   </figcaption>
                 </figure>
+                <div class="shop-it">
+  <div class="shop-it-description inline-block">
+    <div class="shop-icon inline-block"></div>
+    <div class="shop-text important-text">Shop it</div>
+  </div>
+</div>
               </li>
               <li class="product inline-block">
                 <figure class="product-item">
@@ -169,6 +214,12 @@
                      </button>
                   </figcaption>
                 </figure>
+                <div class="shop-it">
+  <div class="shop-it-description inline-block">
+    <div class="shop-icon inline-block"></div>
+    <div class="shop-text important-text">Shop it</div>
+  </div>
+</div>
               </li>
               <li class="product inline-block">
                 <figure class="product-item">
@@ -185,6 +236,78 @@
                      </button>
                   </figcaption>
                 </figure>
+                <div class="shop-it">
+  <div class="shop-it-description inline-block">
+    <div class="shop-icon inline-block"></div>
+    <div class="shop-text important-text">Shop it</div>
+  </div>
+</div>
+              </li>
+              <li class="product inline-block">
+                <figure class="product-item">
+                  <img class="product-image" src="img/products/1.jpg" alt="product-photo" />
+                  <figcaption class="product-panel">
+                    <div class="product-name important-text">
+                      Mimosa lace fress
+                    </div>
+                    <div class="product-cost">
+                      $ 76.95
+                    </div>
+                    <button class = "primary-color primary-color-button button important-text product-add">
+                      Add to cart
+                    </button>
+                  </figcaption>
+                </figure>
+                <div class="shop-it">
+  <div class="shop-it-description inline-block">
+    <div class="shop-icon inline-block"></div>
+    <div class="shop-text important-text">Shop it</div>
+  </div>
+</div>
+              </li>
+              <li class="product inline-block">
+                <figure class="product-item">
+                  <img class="product-image" src="img/products/1.jpg" alt="product-photo" />
+                  <figcaption class="product-panel">
+                    <div class="product-name important-text">
+                      Mimosa lace fress
+                    </div>
+                    <div class="product-cost">
+                      $ 76.95
+                    </div>
+                    <button class = "primary-color primary-color-button button important-text product-add">
+                      Add to cart
+                    </button>
+                  </figcaption>
+                </figure>
+                <div class="shop-it">
+  <div class="shop-it-description inline-block">
+    <div class="shop-icon inline-block"></div>
+    <div class="shop-text important-text">Shop it</div>
+  </div>
+</div>
+              </li>
+              <li class="product inline-block">
+                <figure class="product-item">
+                  <img class="product-image" src="img/products/1.jpg" alt="product-photo" />
+                  <figcaption class="product-panel">
+                    <div class="product-name important-text">
+                      Mimosa lace fress
+                    </div>
+                    <div class="product-cost">
+                      $ 76.95
+                    </div>
+                    <button class = "primary-color primary-color-button button important-text product-add">
+                      Add to cart
+                    </button>
+                  </figcaption>
+                </figure>
+                <div class="shop-it">
+  <div class="shop-it-description inline-block">
+    <div class="shop-icon inline-block"></div>
+    <div class="shop-text important-text">Shop it</div>
+  </div>
+</div>
               </li>
             </ul>
             <button class="button load-button important-text">load more</button>
@@ -202,6 +325,50 @@
                   <img class="product-image" src="img/products/5.jpg" alt="product-photo" />
                   <figcaption class="product-panel">
                     <div class="product-name important-text">
+                    Wishvitalise dress
+                    </div>
+                    <div class="product-cost">
+                      $ 96.55
+                    </div>
+                    <button class="primary-color primary-color-button button important-text product-add">
+                       Add to cart
+                     </button>
+                  </figcaption>
+                </figure>
+                <div class="shop-it">
+                  <div class="shop-it-description inline-block">
+                    <div class="shop-icon inline-block"></div>
+                    <div class="shop-text important-text">Shop it</div>
+                  </div>
+                </div>
+              </li>
+              <li class="product inline-block">
+                <figure class="product-item">
+                  <img class="product-image" src="img/products/5.jpg" alt="product-photo" />
+                  <figcaption class="product-panel">
+                    <div class="product-name important-text">
+                    Wishvitalise dress
+                    </div>
+                    <div class="product-cost">
+                      $ 96.55
+                    </div>
+                    <button class="primary-color primary-color-button button important-text product-add">
+                       Add to cart
+                     </button>
+                  </figcaption>
+                </figure>
+                <div class="shop-it">
+  <div class="shop-it-description inline-block">
+    <div class="shop-icon inline-block"></div>
+    <div class="shop-text important-text">Shop it</div>
+  </div>
+</div>
+              </li>
+              <li class="product inline-block sale">
+                <figure class="product-item">
+                  <img class="product-image" src="img/products/5.jpg" alt="product-photo" />
+                  <figcaption class="product-panel">
+                    <div class="product-name important-text">
                       Mimosa lace fress
                     </div>
                     <div class="product-cost">
@@ -212,38 +379,34 @@
                     </button>
                   </figcaption>
                 </figure>
+                <div class="shop-it">
+  <div class="shop-it-description inline-block">
+    <div class="shop-icon inline-block"></div>
+    <div class="shop-text important-text">Shop it</div>
+  </div>
+</div>
               </li>
-              <li class="product inline-block">
+              <li class="product inline-block sale">
                 <figure class="product-item">
                   <img class="product-image" src="img/products/5.jpg" alt="product-photo" />
                   <figcaption class="product-panel">
                     <div class="product-name important-text">
-                    Wishvitalise dress
+                      Mimosa lace fress
                     </div>
                     <div class="product-cost">
-                      $ 96.55
+                      $ 76.95
                     </div>
-                    <button class="primary-color primary-color-button button important-text product-add">
-                       Add to cart
-                     </button>
+                    <button class = "primary-color primary-color-button button important-text product-add">
+                      Add to cart
+                    </button>
                   </figcaption>
                 </figure>
-              </li>
-              <li class="product inline-block">
-                <figure class="product-item">
-                  <img class="product-image" src="img/products/5.jpg" alt="product-photo" />
-                  <figcaption class="product-panel">
-                    <div class="product-name important-text">
-                    Wishvitalise dress
-                    </div>
-                    <div class="product-cost">
-                      $ 96.55
-                    </div>
-                    <button class="primary-color primary-color-button button important-text product-add">
-                       Add to cart
-                     </button>
-                  </figcaption>
-                </figure>
+                <div class="shop-it">
+  <div class="shop-it-description inline-block">
+    <div class="shop-icon inline-block"></div>
+    <div class="shop-text important-text">Shop it</div>
+  </div>
+</div>
               </li>
             </ul>
             <button class="button load-button important-text">load more</button>
@@ -254,25 +417,28 @@
             <h2 class="brand-title important-text">Favourite brands</h2>
             <ul class="brands-list inline-block">
               <li class="brand inline-block">
-
+                <img src="img/brands/1.jpg" alt="brand"/>
               </li>
               <li class="brand inline-block">
-
+                <img src="img/brands/2.jpg" alt="brand"/>
               </li>
               <li class="brand inline-block">
-
+                <img src="img/brands/3.jpg" alt="brand"/>
               </li>
               <li class="brand inline-block">
-
+                <img src="img/brands/4.jpg" alt="brand"/>
               </li>
               <li class="brand inline-block">
-
+                <img src="img/brands/5.jpg" alt="brand"/>
               </li>
               <li class="brand inline-block">
-
+                <img src="img/brands/6.jpg" alt="brand"/>
               </li>
               <li class="brand inline-block">
-
+                <img src="img/brands/7.jpg" alt="brand"/>
+              </li>
+              <li class="brand inline-block">
+                <img src="img/brands/8.jpg" alt="brand"/>
               </li>
             </ul>
           </div>
@@ -298,66 +464,71 @@
             <li class="info-item inline-block">
               <h3 class="info-header">Customer Service</h3>
               <ul class="info-items">
-                <li>
-                  Contact
-                </li>
-                <li>
-                  Contact
-                </li>
-                <li>
-                  Contact
-                </li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Terms of payment</a></li>
+                <li><a href="">Terms of sale</a></li>
+                <li><a href="">Delivery terms and conditions</a></li>
+                <li><a href="">Returns and Refunds</a></li>
               </ul>
             </li>
             <li class="info-item inline-block">
-              <h3 class="info-header">Customer Service</h3>
+              <h3 class="info-header">Information</h3>
               <ul class="info-items">
-                <li>
-                  Contact
-                </li>
-                <li>
-                  Contact
-                </li>
-                <li>
-                  Contact
-                </li>
+                <li><a href="">Affiliate</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">How to Shop</a></li>
+                <li><a href="">About Nelly</a></li>
+                <li><a href="">Investor relations</a></li>
               </ul>
             </li>
             <li class="info-item inline-block">
-              <h3 class="info-header">Customer Service</h3>
+              <h3 class="info-header">Campaigns</h3>
               <ul class="info-items">
-                <li>
-                  Contact
-                </li>
-                <li>
-                  Contact
-                </li>
-                <li>
-                  Contact
-                </li>
+                <li><a href="">Evening dresses</a></li>
+                <li><a href="">Makeup</a></li>
+                <li><a href="">Fashion forward</a></li>
+                <li><a href="">training clothes</a></li>
+                <li><a href="">Special Occasion Dresses</a></li>
               </ul>
             </li>
             <li class="info-item inline-block">
-              <h3 class="info-header">Customer Service</h3>
+              <h3 class="info-header">Stores</h3>
               <ul class="info-items">
-                <li>
-                  Contact
-                </li>
-                <li>
-                  Contact
-                </li>
-                <li>
-                  fg
-                </li>
-                  Contact
-                </li>
+                <li><a href="">Paris</a></li>
+                <li><a href="">New York</a></li>
+                <li><a href="">London</a></li>
+                <li><a href="">Madrid</a></li>
+                <li><a href="">Tokio</a></li>
               </ul>
             </li>
           </ul>
+          <div class="footer-social">
+            <h3 class="info-header">Social</h3>
+            <ul class="social-icons">
+              <li class="social-icon inline-block"><a href="#" class="icon-twitter"></a></li>
+              <li class="social-icon inline-block"><a href="#" class="icon-pinterest-circled"></a></li>
+              <li class="social-icon inline-block"><a href="#" class="icon-facebook"></a></li>
+              <li class="social-icon inline-block"><a href="#" class="icon-gplus"></a></li>
+              <li class="social-icon inline-block"><a href="#" class="icon-tumblr"></a></li>
+              <li class="social-icon inline-block"><a href="#" class="icon-vimeo"></a></li>
+            </ul>
+          </div>
+          <img src="img/secure-stamp.png" class="secure-stamp" alt="stamp"/>
         </div>
       </footer>
       <footer class="footer">
           <div class="inside-wrapper">
+            <span class="icon-menu"></span>
+            <nav class="footer-nav">
+              <ul class="">
+                <li class="inline-block footer-nav-item"><a href="#">Privacy &amp; Cookies</a></li>
+                <li class="inline-block footer-nav-item"><a href="#">Tems &amp; Conditions</a></li>
+                <li class="inline-block footer-nav-item"><a href="#">Accessibility</a></li>
+                <li class="inline-block footer-nav-item"><a href="#">Store Directory</a></li>
+                <li class="inline-block footer-nav-item"><a href="#">About Us</a></li>
+              </ul>
+            </nav>
             <div class="copyright">
               © LookShop.com <br />
               All Rights Reserved
