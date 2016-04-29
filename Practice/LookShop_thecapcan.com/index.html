@@ -15,8 +15,10 @@
           <div class="inside-wrapper">
             <a class="important-text panel callback" href="tel:+123456789">Custom care: 123 456 789</a>
             <ul class="account-panel-list important-text">
-              <li class="account-panel-item inline-block currency no-primary-panel">
-                    $ us <span class="icon-down-dir"></span>
+              <li class="account-panel-item inline-block currency no-primary-panel icon-down-dir">
+                <select class="select currency-select">
+                  <option>$ US</option>
+                </select>
               </li>
               <li class="account-panel-item inline-block account-name no-primary-panel">
                 <span class="icon-user"></span>My account
@@ -32,11 +34,13 @@
             <img src="img/logo.png" alt="LookShop" />
           </a>
           <div class="cart-block">
-            <div class="cart panel no-primary-panel cart-select">
-              Your cart<span class="icon-down-dir"></span>
+            <div class="select icon-down-dir">
+              <select class="select cart panel no-primary-panel cart-select">
+                <option class="icon-user">Your cart</option>
+              </select>
             </div>
             <div class="cart panel no-primary-panel">
-              <div class="cart-packet inline-block"></div>
+              <span class="cart-packet inline-block"></span>
               <ul class="cart-info">
                 <li class="cart-info-item inline-block important-text">
                   0 items
@@ -53,7 +57,8 @@
                 menu<span class="icon-menu"></span>
               </div>
               <ul class="menu-list">
-                <li class="menu-item inline-block"><a href="#"><span class="icon-down-dir"></span>new</a></li>
+                <li class="menu-item inline-block">
+                  <a href="#"><span class="icon-down-dir"></span>new</a></li>
                 <li class="menu-item inline-block"><a href="#"><span class="icon-down-dir"></span>designers</a></li>
                 <li class="menu-item inline-block"><a href="#"><span class="icon-down-dir"></span>women</a></li>
                 <li class="menu-item inline-block"><a href="#"><span class="icon-down-dir"></span>men</a></li>
@@ -68,9 +73,9 @@
             <li class="slider-item active">
               <div class="inside-wrapper">
                 <div class="action-block inline-block">
-                  <div class="collection-description inline-block">
+                  <span class="collection-description inline-block">
                     Crasy
-                  </div>
+                  </span>
                   <div class="collection-name important-text">Crazy<br />summer</div>
                   <div class="collection-for important-text">
                     Women collection
@@ -120,7 +125,7 @@
               <div class="description-strong">Best</div>
               <div class="big-description-light">Outfits</div>
               <div class="decoration-banner">
-                <div class="decoration-amp inline-block">&amp;</div>
+                <span class="decoration-amp inline-block">&amp;</span>
               </div>
               <div class="big-description-strong">Looks</div>
             </div>
